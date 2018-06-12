@@ -13,7 +13,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer
 
         public MongoClient GetConnection()
         {
-            return new MongoClient("mongodb+srv://stef4905:xep24mkn@cluster0-bjeod.mongodb.net/test?retryWrites=true");
+            return new MongoClient(ConnectionString);
         }
 
     }
