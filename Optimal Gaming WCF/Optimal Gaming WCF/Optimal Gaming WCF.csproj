@@ -45,11 +45,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IService1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="obj\Debug\Optimal Gaming WCF.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Optimal Gaming WCF.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\WcfConfigValidationData.tmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Optimal Gaming WCF.dll" />
+    <Content Include="bin\Debug\Optimal Gaming WCF.pdb" />
+    <Content Include="obj\Debug\Optimal Gaming WCF.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Optimal Gaming WCF.dll" />
+    <Content Include="obj\Debug\Optimal Gaming WCF.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
