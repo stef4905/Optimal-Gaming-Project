@@ -8,5 +8,6 @@ namespace Optimal_Gaming_Class_Library
 {
     public class Class1
     {
+        //Test
     }
 }
