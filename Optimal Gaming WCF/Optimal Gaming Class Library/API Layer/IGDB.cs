@@ -14,6 +14,11 @@ namespace Optimal_Gaming_Class_Library.API_Layer
 
         string UserKey = "c79eb080f8b2262163af03f2184f19e2"; // Private authentication key to gain access to the IGDB API's
 
+        /// <summary>
+        /// Get a game from the IGDB API using the games specific id. 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>RootObject of game</returns>
         public RootObject GetGameById(int id)
         {
             RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/" + id);
@@ -26,6 +31,11 @@ namespace Optimal_Gaming_Class_Library.API_Layer
             return game;
         }
 
+        /// <summary>
+        /// NOT FINISHED YET!
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>RootObject of game</returns>
         public List<RootObject> GetAllGamesId()
         {
             RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/");
@@ -37,32 +47,25 @@ namespace Optimal_Gaming_Class_Library.API_Layer
             return listOfGames;
         }
 
-        public List<RootObject> GetAllGames()
+        /// <summary>
+        /// NOT FINISHED YET! SHOULD ONLY BE USED FOR A SPCIFIC AMOUNT OF GAMES, BECAUSE THE DATABASE HAS MORE THAN 1 MIL GAMES IN IT!
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>RootObject of game</returns>
+        public List<RootObject> GetAllGames(int[] GameIds)
         {
-            string numbers = "";
-
-
-            int count = TotalIGDBGamesCount();
-            int[] arr = new int[count];
-            for (var i = 1; i < count; i++)
-            {
-                arr[i] = i;
-            }
-            numbers = String.Join(",", arr);
-            Console.WriteLine("array size: " + arr.Length + " string: " + numbers);
-
-
-            //int x = 1;
-            //while (x >= count)
+            //int count = TotalIGDBGamesCount();
+            //int[] arr = new int[count];
+            //for (var i = 1; i <= count; i++)
             //{
-            //    if (x == count)
-            //    {
-            //        numbers = numbers + x.ToString();
-            //    }
-            //    numbers = numbers + x.ToString() + ",";
+            //    arr[i-1] = i;
             //}
 
-            RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/" + arr.ToString());
+            string numbers = "";
+
+            numbers = String.Join(",", GameIds);
+
+            RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/" + numbers); // the string is to long, and also there are more than 1 mil games. We should only use this method for getting a specific amount of games (only the most known)
             RestRequest request = new RestRequest(Method.GET);
             request.AddHeader("user-key", UserKey);
             request.AddHeader("Accept", "application/json");
@@ -71,6 +74,10 @@ namespace Optimal_Gaming_Class_Library.API_Layer
             return listOfGames;
         }
         
+        /// <summary>
+        /// Get the total count of games from the IGDB database
+        /// </summary>
+        /// <returns>int of amount</returns>
         public int TotalIGDBGamesCount()
         {
             RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/count");

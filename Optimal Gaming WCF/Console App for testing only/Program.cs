@@ -21,11 +21,17 @@ namespace Console_App_for_testing_only
             List<RootObject> AllId = igdb.GetAllGamesId();
             int count = igdb.TotalIGDBGamesCount();
             Console.Write("Total games on IGDB: " + count);
-            List<RootObject> AllGames = igdb.GetAllGames();
+            int[] arr = { 1 };
+            List<RootObject> AllGames = igdb.GetAllGames(arr);
 
 
             Console.WriteLine("Games count: " + AllId.Count);
-            Console.Write("Games count all games: " + AllGames.Count);
+
+            foreach (var game in AllGames)
+            {
+                Console.WriteLine("Name of game: " + game.name + " | Id: " + game.id);
+            }
+            
             
             Console.ReadLine();
 
