@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Optimal_Gaming_Class_Library.Model_Layer
 {
-    class Class1
+    public class Game
     {
+
     }
 }
