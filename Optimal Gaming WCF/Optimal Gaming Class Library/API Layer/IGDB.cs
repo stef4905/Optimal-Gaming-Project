@@ -26,6 +26,17 @@ namespace Optimal_Gaming_Class_Library.API_Layer
             return game;
         }
 
+        public List<RootObject> GetAllGamesId()
+        {
+            RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/");
+            RestRequest request = new RestRequest(Method.GET);
+            request.AddHeader("user-key", UserKey);
+            request.AddHeader("Accept", "application/json");
+            IRestResponse<RootObject> response = client.Execute<RootObject>(request);
+            List<RootObject> listOfGames = JsonConvert.DeserializeObject<List<RootObject>>(response.Content);
+            return listOfGames;
+        }
+
 
 
 

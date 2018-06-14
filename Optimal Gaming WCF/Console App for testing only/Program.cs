@@ -14,9 +14,12 @@ namespace Console_App_for_testing_only
         static void Main(string[] args)
         {
             IGDB igdb = new IGDB();
-            RootObject game = igdb.GetGameById(1942);
+            // RootObject game = igdb.GetGameById(1942);
 
-            Console.WriteLine("Name: " + game.name + " | Game id: " + game.id);
+            // Console.WriteLine("Name: " + game.name + " | Game id: " + game.id);
+
+            List<RootObject> AllGames = igdb.GetAllGamesId();
+            Console.WriteLine("Games count: " + AllGames.Count);
             Console.ReadLine();
 
         }
