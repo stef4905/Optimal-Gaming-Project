@@ -52,7 +52,7 @@ namespace Optimal_Gaming_Class_Library.API_Layer
         /// </summary>
         /// <param name="id"></param>
         /// <returns>RootObject of game</returns>
-        public List<RootObject> GetAllGames(int[] GameIds)
+        public List<RootObject> GetAllGamesById(int[] GameIds)
         {
             //int count = TotalIGDBGamesCount();
             //int[] arr = new int[count];

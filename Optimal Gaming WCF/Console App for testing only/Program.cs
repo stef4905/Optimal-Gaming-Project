@@ -21,8 +21,8 @@ namespace Console_App_for_testing_only
             List<RootObject> AllId = igdb.GetAllGamesId();
             int count = igdb.TotalIGDBGamesCount();
             Console.Write("Total games on IGDB: " + count);
-            int[] arr = { 1 };
-            List<RootObject> AllGames = igdb.GetAllGames(arr);
+            int[] arr = { 1, 2, 3, 30, 2584, 54 };
+            List<RootObject> AllGames = igdb.GetAllGamesById(arr);
 
 
             Console.WriteLine("Games count: " + AllId.Count);
