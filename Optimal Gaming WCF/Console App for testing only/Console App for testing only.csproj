@@ -68,5 +68,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Optimal Gaming Class Library\Optimal Gaming Class Library.csproj">
+      <Project>{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}</Project>
+      <Name>Optimal Gaming Class Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
