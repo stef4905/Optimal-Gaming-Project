@@ -37,6 +37,50 @@ namespace Optimal_Gaming_Class_Library.API_Layer
             return listOfGames;
         }
 
+        public List<RootObject> GetAllGames()
+        {
+            string numbers = "";
+
+
+            int count = TotalIGDBGamesCount();
+            int[] arr = new int[count];
+            for (var i = 1; i < count; i++)
+            {
+                arr[i] = i;
+            }
+            numbers = String.Join(",", arr);
+            Console.WriteLine("array size: " + arr.Length + " string: " + numbers);
+
+
+            //int x = 1;
+            //while (x >= count)
+            //{
+            //    if (x == count)
+            //    {
+            //        numbers = numbers + x.ToString();
+            //    }
+            //    numbers = numbers + x.ToString() + ",";
+            //}
+
+            RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/" + arr.ToString());
+            RestRequest request = new RestRequest(Method.GET);
+            request.AddHeader("user-key", UserKey);
+            request.AddHeader("Accept", "application/json");
+            IRestResponse<RootObject> response = client.Execute<RootObject>(request);
+            List<RootObject> listOfGames = JsonConvert.DeserializeObject<List<RootObject>>(response.Content);
+            return listOfGames;
+        }
+        
+        public int TotalIGDBGamesCount()
+        {
+            RestClient client = new RestClient("https://api-2445582011268.apicast.io/games/count");
+            RestRequest request = new RestRequest(Method.GET);
+            request.AddHeader("user-key", UserKey);
+            request.AddHeader("Accept", "application/json");
+            IRestResponse<RootObject> response = client.Execute<RootObject>(request);
+            Count amount = JsonConvert.DeserializeObject<Count>(response.Content);
+            return amount.count;
+        }
 
 
 

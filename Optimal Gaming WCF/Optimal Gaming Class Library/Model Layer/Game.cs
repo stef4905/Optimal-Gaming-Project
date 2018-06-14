@@ -132,4 +132,8 @@ namespace Optimal_Gaming_Class_Library.Model_Layer
         public External external { get; set; }
     }
 
+    public class Count {
+        public int count { get; set; }
+    }
+
 }
