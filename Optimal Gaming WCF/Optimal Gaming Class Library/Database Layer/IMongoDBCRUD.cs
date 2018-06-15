@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Optimal_Gaming_Class_Library.Database_Layer
 {
-    public interface IMongoDBCRUD
+    public interface IMongoDBCRUD<T>
     {
-        void Create();
-        BsonDocument Get();
-        void Update();
-        void Delete();
+        void Create(T obj);
+        T Get(ObjectId id);
+        Task UpdateAsync(T obj);
+        bool Delete(T obj);
     }
 }

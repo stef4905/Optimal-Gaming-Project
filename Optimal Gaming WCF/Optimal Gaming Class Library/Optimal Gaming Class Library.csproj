@@ -69,7 +69,8 @@
     <Compile Include="API Layer\IGDB.cs" />
     <Compile Include="Control Layer\Class1.cs" />
     <Compile Include="Database Layer\IMongoDBCRUD.cs" />
-    <Compile Include="Database Layer\MongoDB.cs" />
+    <Compile Include="Database Layer\MongoDBConnection.cs" />
+    <Compile Include="Database Layer\MongoDBGame.cs" />
     <Compile Include="Model Layer\Game.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />

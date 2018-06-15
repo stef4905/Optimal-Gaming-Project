@@ -15,7 +15,7 @@ namespace Optimal_Gaming_Class_Library.API_Layer
         string UserKey = "c79eb080f8b2262163af03f2184f19e2"; // Private authentication key to gain access to the IGDB API's
 
         /// <summary>
-        /// Get a game from the IGDB API using the games specific id. 
+        /// Get a single game from the IGDB API using the games specific id. 
         /// </summary>
         /// <param name="id"></param>
         /// <returns>RootObject of game</returns>
