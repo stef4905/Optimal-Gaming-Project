@@ -44,7 +44,7 @@ namespace Console_App_for_testing_only
             //MongoDBConnection client = new MongoDBConnection();
             //client.CreateDatabase("Games");
             //Getting game from the IGDB API
-            RootObject game = igdb.GetGameById(20);
+            RootObject game = igdb.GetGameById(56842);
             //Print out the name of the game
             Console.WriteLine("Game name for inserting: " + game.name);
             //Inserting the game into our newly created database
