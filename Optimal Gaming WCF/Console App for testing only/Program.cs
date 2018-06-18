@@ -36,13 +36,15 @@ namespace Console_App_for_testing_only
             
             Console.ReadLine();
 
+
+
             //Getting connection to MongoDB
             MongoDBGame dbGame = new MongoDBGame();
             // Creating a new database called "Games"
-            MongoDBConnection client = new MongoDBConnection();
-            client.CreateDatabase("Games");
+            //MongoDBConnection client = new MongoDBConnection();
+            //client.CreateDatabase("Games");
             //Getting game from the IGDB API
-            RootObject game = igdb.GetGameById(1943);
+            RootObject game = igdb.GetGameById(20);
             //Print out the name of the game
             Console.WriteLine("Game name for inserting: " + game.name);
             //Inserting the game into our newly created database
@@ -53,9 +55,6 @@ namespace Console_App_for_testing_only
             //print the collection from the database, to check that is has been inserted
             Console.WriteLine("Game returned from database: " + game.name + " with ObjectId " + game.mongoDBId);
             Console.ReadLine();
-
-
-
 
         }
     }

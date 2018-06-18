@@ -32,7 +32,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer
         /// <returns>Async method</returns>
         public void Create(RootObject obj)
         {
-            Collection.InsertOne(obj); 
+            Collection.InsertOne(obj);
         }
 
         /// <summary>
