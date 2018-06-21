@@ -55,5 +55,6 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
         {
             return _MongoDBCPU.Delete(obj);
         }
+
     }
 }

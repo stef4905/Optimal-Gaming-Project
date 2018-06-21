@@ -68,6 +68,11 @@
   <ItemGroup>
     <Compile Include="API Layer\IGDB.cs" />
     <Compile Include="Control Layer\Class1.cs" />
+    <Compile Include="Control Layer\ComponentCaseController.cs" />
+    <Compile Include="Control Layer\ComponentCPUController.cs" />
+    <Compile Include="Control Layer\ComponentGPUController.cs" />
+    <Compile Include="Control Layer\ComponentSizeController.cs" />
+    <Compile Include="Control Layer\DBConnection.cs" />
     <Compile Include="Control Layer\SpecsController\MinSpecController.cs" />
     <Compile Include="Database Layer\Components\Details\MongoDBSize.cs" />
     <Compile Include="Database Layer\Components\MongoDBCase.cs" />
