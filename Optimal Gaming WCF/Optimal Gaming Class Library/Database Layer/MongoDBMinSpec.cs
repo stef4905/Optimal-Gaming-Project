@@ -9,7 +9,7 @@ using Optimal_Gaming_Class_Library.Model_Layer;
 
 namespace Optimal_Gaming_Class_Library.Database_Layer
 {
-    class MongoDBMinSpec : IMongoDBCRUD<Spec>
+    public class MongoDBMinSpec : IMongoDBCRUD<Spec>
     {
         private IMongoDatabase Database;
         private string DatabaseName = "MinSpecs";

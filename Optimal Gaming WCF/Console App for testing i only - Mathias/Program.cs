@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Optimal_Gaming_Class_Library.Control_Layer.SpecsController;
+using Optimal_Gaming_Class_Library.Model_Layer;
+using Optimal_Gaming_Class_Library.Database_Layer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +11,21 @@ namespace Console_App_for_testing_i_only___Mathias
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
+            
+
+        }
+
+        public static void CreateMinSpec()
+        {
+            MinSpecController minSpecController = new MinSpecController();
+            Spec spec = new Spec("Hej", "Med", "dig", 10, 11, 12, "hej");
+        
+            minSpecController.CreateMinSpec(spec);
+            Console.WriteLine("ID: " + spec.Id);
         }
     }
 }
