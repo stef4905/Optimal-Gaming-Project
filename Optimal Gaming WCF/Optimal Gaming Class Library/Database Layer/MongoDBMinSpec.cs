@@ -74,6 +74,12 @@ namespace Optimal_Gaming_Class_Library.Database_Layer
             return result;
         }
 
+        /// <summary>
+        /// Updates the Spec object in the database.
+        /// This is done by finding the game in the collection and replacing using async for better perfomance. 
+        /// </summary>
+        /// <param name="obj">Spec object</param>
+        /// <returns>Async method</returns>
         public async Task UpdateAsync(Spec obj)
         {
             var filter = Builders<Spec>.Filter.Eq(spec => spec.Id, obj.Id);
