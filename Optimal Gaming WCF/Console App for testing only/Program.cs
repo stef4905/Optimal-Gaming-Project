@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Optimal_Gaming_Class_Library.Control_Layer;
 using Optimal_Gaming_Class_Library.Model_Layer.Components.Details;
+using Optimal_Gaming_Class_Library.Control_Layer.SpecsController;
 
 namespace Console_App_for_testing_only
 {
@@ -16,6 +17,7 @@ namespace Console_App_for_testing_only
     {
         static void Main(string[] args)
         {
+            
             Console.ReadLine();
         }
 
