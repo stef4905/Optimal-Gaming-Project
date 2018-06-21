@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,8 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components.Details
 {
     public class Size
     {
+        [BsonId]
+        public ObjectId MongoDBId { get; set; }
         public double Height { get; set; }
         public double Width { get; set; }
         public double Depth { get; set; }

@@ -42,7 +42,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer
         /// <returns>Bool</returns>
         public bool Delete(RootObject obj)
         {
-            var filter = Builders<RootObject>.Filter.Eq(game => game.id, obj.id);
+            var filter = Builders<RootObject>.Filter.Eq(game => game.mongoDBId, obj.mongoDBId);
             bool successStatus = true;
             try
             {
