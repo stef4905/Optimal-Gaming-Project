@@ -15,7 +15,8 @@ namespace Console_App_for_testing_i_only___Mathias
 
         static void Main(string[] args)
         {
-            
+            CreateMinSpec();
+            Console.ReadLine();
 
         }
 
