@@ -68,6 +68,15 @@
   <ItemGroup>
     <Compile Include="API Layer\IGDB.cs" />
     <Compile Include="Control Layer\Class1.cs" />
+    <Compile Include="Database Layer\Components\Details\MongoDBSize.cs" />
+    <Compile Include="Database Layer\Components\MongoDBCase.cs" />
+    <Compile Include="Database Layer\Components\MongoDBComponent.cs" />
+    <Compile Include="Database Layer\Components\MongoDBCPU.cs" />
+    <Compile Include="Database Layer\Components\MongoDBGPU.cs" />
+    <Compile Include="Database Layer\Components\MongoDBHDD.cs" />
+    <Compile Include="Database Layer\Components\MongoDBMotherboard.cs" />
+    <Compile Include="Database Layer\Components\MongoDBPSU.cs" />
+    <Compile Include="Database Layer\Components\MongoDBSSD.cs" />
     <Compile Include="Database Layer\IMongoDBCRUD.cs" />
     <Compile Include="Database Layer\MongoDBConnection.cs" />
     <Compile Include="Database Layer\MongoDBGame.cs" />
