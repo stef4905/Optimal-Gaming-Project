@@ -11,7 +11,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
 {
     public class MongoDBSSD : IMongoDBCRUD<SSD>
     {
-        private IMongoDatabase Databse;
+        private IMongoDatabase Database;
         private string DatabaseName = "Components - SSD";
         private IMongoCollection<SSD> Collection;
 
@@ -21,8 +21,8 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
         public MongoDBSSD()
         {
             MongoDBConnection mongoDB = new MongoDBConnection();
-            Databse = mongoDB.GetDatabase(DatabaseName);
-            Collection.Database.GetCollection<SSD>(DatabaseName);
+            Database = mongoDB.GetDatabase(DatabaseName);
+            Collection = Database.GetCollection<SSD>(DatabaseName);
         }
 
         /// <summary>

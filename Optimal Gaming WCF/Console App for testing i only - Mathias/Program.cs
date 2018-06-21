@@ -23,7 +23,7 @@ namespace Console_App_for_testing_i_only___Mathias
         public static void CreateMinSpec()
         {
             MinSpecController minSpecController = new MinSpecController();
-            Spec spec = new Spec("Hej", "Med", "dig", 10, 11, 12, "hej");
+            MinSpec spec = new MinSpec("Hej", "Med", "dig", 10, 11, 12, "hej");
         
             minSpecController.CreateMinSpec(spec);
             Console.WriteLine("ID: " + spec.Id);

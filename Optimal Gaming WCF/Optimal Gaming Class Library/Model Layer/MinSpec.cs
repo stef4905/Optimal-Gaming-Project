@@ -10,8 +10,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer
 {
     public class MinSpec : Spec
     {
-        [BsonId]
-        public ObjectId Id { get; set; }
+
         public MinSpec(string intelCPU, string mMDCPU, string gPU, int vRAMinGB, int rAMinGB, int hDDSpace, string oSVersion) : base(intelCPU, mMDCPU, gPU, vRAMinGB, rAMinGB, hDDSpace, oSVersion)
         {
             IntelCPU = intelCPU;
