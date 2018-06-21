@@ -85,5 +85,6 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components.Details
             var filter = Builders<Size>.Filter.Eq(size => size.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
     }
 }

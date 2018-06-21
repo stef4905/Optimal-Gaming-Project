@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimal Gaming WCF", "Optimal Gaming WCF\Optimal Gaming WCF.csproj", "{50FA0728-1F63-4257-A24D-4C817DCCE706}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Optimal Gaming Class Library", "Optimal Gaming Class Library\Optimal Gaming Class Library.csproj", "{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console App for testing only", "Console App for testing only\Console App for testing only.csproj", "{F0303C29-13E1-426E-8752-31E81AF8855F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console App for testing i only - Mathias", "Console App for testing i only - Mathias\Console App for testing i only - Mathias.csproj", "{004D200A-55C3-49A6-A4E1-6436842394F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{50FA0728-1F63-4257-A24D-4C817DCCE706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50FA0728-1F63-4257-A24D-4C817DCCE706}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50FA0728-1F63-4257-A24D-4C817DCCE706}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50FA0728-1F63-4257-A24D-4C817DCCE706}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{F0303C29-13E1-426E-8752-31E81AF8855F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0303C29-13E1-426E-8752-31E81AF8855F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0303C29-13E1-426E-8752-31E81AF8855F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004D200A-55C3-49A6-A4E1-6436842394F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004D200A-55C3-49A6-A4E1-6436842394F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004D200A-55C3-49A6-A4E1-6436842394F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004D200A-55C3-49A6-A4E1-6436842394F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
