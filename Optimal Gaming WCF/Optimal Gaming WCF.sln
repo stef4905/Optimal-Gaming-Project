@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console App for testing only", "Console App for testing only\Console App for testing only.csproj", "{F0303C29-13E1-426E-8752-31E81AF8855F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console App for testing i only - Mathias", "Console App for testing i only - Mathias\Console App for testing i only - Mathias.csproj", "{004D200A-55C3-49A6-A4E1-6436842394F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB} = {5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
