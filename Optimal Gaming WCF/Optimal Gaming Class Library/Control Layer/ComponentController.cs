@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Optimal_Gaming_Class_Library.Model_Layer;
+using Optimal_Gaming_Class_Library.Model_Layer.Components;
+using Optimal_Gaming_Class_Library.Model_Layer.Components.Details;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +19,8 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
         private ComponentSizeController _ComponentSizeController = null;
         private ComponentSSDController _ComponentSSDController = null;
         private ComponentHDDController _ComponentHDDController = null;
+        private ComponentRamController _ComponentRamController = null;
+        //Ram controller needed
         
         /// <summary>
         /// Constructor of the ComponentController class. Instanciate the different component controllers.
@@ -30,6 +35,9 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             _ComponentSizeController = new ComponentSizeController();
             _ComponentSSDController = new ComponentSSDController();
             _ComponentHDDController = new ComponentHDDController();
+            _ComponentRamController = new ComponentRamController();
         }
+
+             
     }
 }
