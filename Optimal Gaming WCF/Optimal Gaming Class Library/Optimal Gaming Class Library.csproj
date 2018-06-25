@@ -78,6 +78,7 @@
     <Compile Include="Control Layer\DBConnection.cs" />
     <Compile Include="Control Layer\SpecsController\ComponentHDDController.cs" />
     <Compile Include="Control Layer\SpecsController\MinSpecController.cs" />
+    <Compile Include="Control Layer\SpecsController\RecSpecController.cs" />
     <Compile Include="Database Layer\Components\Details\MongoDBSize.cs" />
     <Compile Include="Database Layer\Components\MongoDBCase.cs" />
     <Compile Include="Database Layer\Components\MongoDBComponent.cs" />

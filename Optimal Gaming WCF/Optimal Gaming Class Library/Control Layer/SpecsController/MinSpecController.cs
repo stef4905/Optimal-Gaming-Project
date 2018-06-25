@@ -28,7 +28,7 @@ namespace Optimal_Gaming_Class_Library.Control_Layer.SpecsController
             return MinSpecs.Delete(obj);
         }
 
-        public Spec GetSpec(ObjectId id)
+        public Spec GetMinSpec(ObjectId id)
         {
             return MinSpecs.Get(id);
         }
