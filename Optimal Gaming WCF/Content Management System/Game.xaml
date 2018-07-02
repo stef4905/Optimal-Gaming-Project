@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="1051" d:DesignWidth="1664">
 	<Grid>
-		<ListView HorizontalAlignment="Left" Height="873" Margin="10,66,0,0" VerticalAlignment="Top" Width="1635">
+		<ListView HorizontalAlignment="Left" Height="873" Margin="10,67,0,0" VerticalAlignment="Top" Width="1635">
 			<ListView.View>
 				<GridView>
 					<GridViewColumn Header="ID" Width="110"/>
@@ -22,5 +22,7 @@
 		<TextBox HorizontalAlignment="Left" Height="38" Margin="10,14,0,0" TextWrapping="Wrap" Text="Search for game" VerticalAlignment="Top" Width="530" FontSize="24"/>
 		<Button Content="Search" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="554,14,0,0" VerticalAlignment="Top" Width="113" Foreground="White" FontSize="24" BorderThickness="0"/>
 		<Button Content="Show all games" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="686,14,0,0" VerticalAlignment="Top" Width="200" Foreground="White" FontSize="24" BorderThickness="0"/>
+		<Button Content="Open" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1474,968,0,0" VerticalAlignment="Top" Width="171" Foreground="White" FontSize="24" BorderThickness="0"/>
+		<Button Content="Delete" HorizontalAlignment="Left" Height="54" Background="#d63031" Margin="10,968,0,0" VerticalAlignment="Top" Width="171" Foreground="White" FontSize="24" BorderThickness="0"/>
 	</Grid>
 </UserControl>
