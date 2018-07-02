@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console App for testing i o
 		{5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB} = {5EA591DB-DCAB-4ECD-82CA-CD6432B0F0FB}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content Management System", "Content Management System\Content Management System.csproj", "{CEC6AF90-349D-46F3-A980-41983BF28EF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{004D200A-55C3-49A6-A4E1-6436842394F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{004D200A-55C3-49A6-A4E1-6436842394F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{004D200A-55C3-49A6-A4E1-6436842394F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC6AF90-349D-46F3-A980-41983BF28EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC6AF90-349D-46F3-A980-41983BF28EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC6AF90-349D-46F3-A980-41983BF28EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC6AF90-349D-46F3-A980-41983BF28EF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
