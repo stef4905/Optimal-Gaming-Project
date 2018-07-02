@@ -16,26 +16,13 @@ using System.Windows.Shapes;
 namespace Content_Management_System
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Game.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Game : UserControl
     {
-        public MainWindow()
+        public Game()
         {
             InitializeComponent();
-            MainGrid.Children.Add(new Home());
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            MainGrid.Children.Clear();
-            MainGrid.Children.Add(new Game());
-        }
-
-        private void OverViewButton(object sender, RoutedEventArgs e)
-        {
-            MainGrid.Children.Clear();
-            MainGrid.Children.Add(new Home());
         }
     }
 }

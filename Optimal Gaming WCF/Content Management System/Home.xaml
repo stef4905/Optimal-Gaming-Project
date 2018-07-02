@@ -13,6 +13,11 @@
 		<Label Content="15.210" HorizontalAlignment="Left" Margin="273,133,0,0" VerticalAlignment="Top" Foreground="White" FontSize="52"/>
 		<Label Foreground="White" Content="YESTERDAY THERE WAS 10.580 UNIQ VISITORS" HorizontalAlignment="Left" Margin="273,278,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.285,0.442" Background="#00000000" FontSize="22"/>
 		<Image HorizontalAlignment="Left" Height="200" Margin="36,80,0,0" VerticalAlignment="Top" Width="200" Source="https://cdn2.iconfinder.com/data/icons/amazon-aws-stencils/100/Non-Service_Specific_copy_Users-512.png"/>
+		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="298" VerticalAlignment="Top" Width="325" Margin="10,382,0,0"/>
+		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="298" VerticalAlignment="Top" Width="325" Margin="340,382,0,0"/>
+		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="298" VerticalAlignment="Top" Width="325" Margin="670,382,0,0"/>
+		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="298" VerticalAlignment="Top" Width="325" Margin="1000,382,0,0"/>
+		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="298" VerticalAlignment="Top" Width="315" Margin="1330,382,0,0"/>
 
 	</Grid>
 </UserControl>

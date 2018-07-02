@@ -11,13 +11,13 @@
 		<Rectangle Fill="#2d3436" HorizontalAlignment="Left" Height="1072" VerticalAlignment="Top" Width="250"/>
 		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="1051" Margin="250,0,0,0" VerticalAlignment="Top" Width="1664"/>
 		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="1051" Margin="250,0,0,0" VerticalAlignment="Top" Width="1664"/>
-		<Button x:Name="HomeButton"  Content="OVERVIEW" BorderThickness="0" Foreground="#dfe6e9" Background="#2d3436" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" FontSize="24" Width="250" Click="Button_Click"/>
+		<Button x:Name="HomeButton"  Content="OVERVIEW" BorderThickness="0" Foreground="#dfe6e9" Background="#2d3436" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" FontSize="24" Width="250" Click="OverViewButton"/>
 		<Button x:Name="GameButton" Content="Games" BorderThickness="0" Foreground="#dfe6e9" Background="#2d3436" HorizontalAlignment="Left" Height="74" Margin="0,74,0,0" VerticalAlignment="Top" FontSize="24" Width="250" Click="Button_Click"/>
 		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="1051" Margin="250,0,0,0" VerticalAlignment="Top" Width="1664"/>
 		<Button x:Name="SpecButton"  Content="SPECS" BorderThickness="0" Foreground="#dfe6e9" Background="#2d3436" HorizontalAlignment="Left" Height="76" Margin="0,148,0,0" VerticalAlignment="Top" FontSize="24" Width="250" Click="Button_Click"/>
 		<Rectangle Fill="#dfe6e9" HorizontalAlignment="Left" Height="1051" Margin="250,0,0,0" VerticalAlignment="Top" Width="1664"/>
 		<Button x:Name="BuildButton"  Content="BUILDS" BorderThickness="0" Foreground="#dfe6e9" Background="#2d3436" HorizontalAlignment="Left" Height="74" Margin="0,224,0,0" VerticalAlignment="Top" FontSize="24" Width="250" Click="Button_Click"/>
 		<Button x:Name="WebstieButton"  Content="WEBSITE" BorderThickness="0" Foreground="#dfe6e9" Background="#2d3436" HorizontalAlignment="Left" Height="74" Margin="0,298,0,0" VerticalAlignment="Top" FontSize="24" Width="250" Click="Button_Click"/>
-		<Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="1051" Margin="250,0,0,0" VerticalAlignment="Top" Width="1664"/>
+		<Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="1051" Margin="250,0,0,0" VerticalAlignment="Top" Width="1664" Background="#b2bec3"/>
 	</Grid>
 </Window>
