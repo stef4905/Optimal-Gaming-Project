@@ -67,12 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API Layer\IGDB.cs" />
-    <Compile Include="Control Layer\Class1.cs" />
     <Compile Include="Control Layer\ComponentCaseController.cs" />
+    <Compile Include="Control Layer\ComponentController.cs" />
     <Compile Include="Control Layer\ComponentCPUController.cs" />
     <Compile Include="Control Layer\ComponentGPUController.cs" />
+    <Compile Include="Control Layer\ComponentHDDController.cs" />
     <Compile Include="Control Layer\ComponentMotherboardController.cs" />
     <Compile Include="Control Layer\ComponentPSUController.cs" />
+    <Compile Include="Control Layer\ComponentRamController.cs" />
     <Compile Include="Control Layer\ComponentSizeController.cs" />
     <Compile Include="Control Layer\ComponentSSDController.cs" />
     <Compile Include="Control Layer\DBConnection.cs" />
@@ -86,12 +88,15 @@
     <Compile Include="Database Layer\Components\MongoDBHDD.cs" />
     <Compile Include="Database Layer\Components\MongoDBMotherboard.cs" />
     <Compile Include="Database Layer\Components\MongoDBPSU.cs" />
+    <Compile Include="Database Layer\Components\MongoDBRam.cs" />
     <Compile Include="Database Layer\Components\MongoDBSSD.cs" />
     <Compile Include="Database Layer\IMongoDBCRUD.cs" />
+    <Compile Include="Database Layer\MongoDBBuild.cs" />
     <Compile Include="Database Layer\MongoDBConnection.cs" />
     <Compile Include="Database Layer\MongoDBGame.cs" />
     <Compile Include="Database Layer\MongoDBMinSpec.cs" />
     <Compile Include="Database Layer\MongoDBRecSpec.cs" />
+    <Compile Include="Model Layer\Build.cs" />
     <Compile Include="Model Layer\Component.cs" />
     <Compile Include="Model Layer\Components\Case.cs" />
     <Compile Include="Model Layer\Components\CPU.cs" />
@@ -103,6 +108,7 @@
     <Compile Include="Model Layer\Components\SSD.cs" />
     <Compile Include="Model Layer\Game.cs" />
     <Compile Include="Model Layer\MinSpec.cs" />
+    <Compile Include="Model Layer\Ram.cs" />
     <Compile Include="Model Layer\RecSpec.cs" />
     <Compile Include="Model Layer\Spec.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
