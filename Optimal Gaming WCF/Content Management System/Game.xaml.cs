@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Optimal_Gaming_Class_Library.Control_Layer;
+using Optimal_Gaming_Class_Library.Model_Layer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,11 +24,24 @@ namespace Content_Management_System
     {
 
         Grid MainGrid = null;
+        GameController _GameController = null;
         
         public Game(Grid mainGrid)
         {
             InitializeComponent();
             MainGrid = mainGrid;
+            _GameController = new GameController();
+            GetAllGames();
+        }
+
+        public void GetAllGames()
+        {
+            List<RootObject> games = _GameController.GetAllGames();
+            TableList.Items.Clear();
+            foreach (var game in games)
+            {
+                TableList.Items.Add(game);
+            }
         }
 
         private void AddNewGame(object sender, RoutedEventArgs e)

@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Content_Management_System.Specs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Content_Management_System"
+             mc:Ignorable="d" 
+             d:DesignHeight="1051" d:DesignWidth="1664">
+	<Grid>
+		<ListView HorizontalAlignment="Left" Height="873" Margin="10,67,0,0" VerticalAlignment="Top" Width="1635">
+			<ListView.View>
+				<GridView>
+					<GridViewColumn Header="ID" Width="110"/>
+					<GridViewColumn Header="Name of the part" Width="1100"/>
+					<GridViewColumn Header="Category" Width="200"/>
+					<GridViewColumn Header="Manufactor" Width="200"/>
+				</GridView>
+			</ListView.View>
+		</ListView>
+		<TextBox x:Name="SearchField" HorizontalAlignment="Left" Height="38" Margin="10,14,0,0" TextWrapping="Wrap" Text="Search for a part" VerticalAlignment="Top" Width="530" FontSize="24"/>
+		<Button Content="Search" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="554,14,0,0" VerticalAlignment="Top" Width="113" Foreground="White" FontSize="24" BorderThickness="0" Click="SearchForPart"/>
+		<Button Content="Show all spec parts" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="686,14,0,0" VerticalAlignment="Top" Width="229" Foreground="White" FontSize="24" BorderThickness="0" Click="ShowAllParts"/>
+		<Button Content="Add a new part" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1456,968,0,0" VerticalAlignment="Top" Width="189" Foreground="White" FontSize="24" BorderThickness="0" Click="AddNewPart"/>
+		<Button Content="Delete" HorizontalAlignment="Left" Height="54" Background="#d63031" Margin="10,968,0,0" VerticalAlignment="Top" Width="171" Foreground="White" FontSize="24" BorderThickness="0" Click="DeleteSelectedPart"/>
+		<Button Content="Edit selected part" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1215,968,0,0" VerticalAlignment="Top" Width="207" Foreground="White" FontSize="24" BorderThickness="0" Click="EditSelectedPart"/>
+	</Grid>
+</UserControl>

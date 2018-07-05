@@ -7,20 +7,19 @@
              mc:Ignorable="d" 
       d:DesignHeight="1051" d:DesignWidth="1664">
 	<Grid>
-		<ListView HorizontalAlignment="Left" Height="873" Margin="10,67,0,0" VerticalAlignment="Top" Width="1635">
+		<ListView x:Name="TableList" HorizontalAlignment="Left" Height="873" Margin="10,67,0,0" VerticalAlignment="Top" Width="1635">
 			<ListView.View>
 				<GridView>
-					<GridViewColumn Header="ID" Width="110"/>
-					<GridViewColumn Header="Game title" Width="800"/>
-					<GridViewColumn Header="Release date" Width="200"/>
+					<GridViewColumn Header="Game title" Width="800" DisplayMemberBinding="{Binding name}"/>
+					<GridViewColumn Header="Rating" Width="200" DisplayMemberBinding="{Binding rating}"/>
 					<GridViewColumn Header="Visitors" Width="100"/>
-					<GridViewColumn Header="Genre" Width="210"/>
-					<GridViewColumn Header="Catagory" Width="210"/>
+					<GridViewColumn Header="Udgivelses dato" Width="210" DisplayMemberBinding="{Binding first_release_date}"/>
+					<GridViewColumn Header="Category" Width="210" DisplayMemberBinding="{Binding category}"/>
 				</GridView>
 			</ListView.View>
 		</ListView>
 		<TextBox x:Name="SearchField" HorizontalAlignment="Left" Height="38" Margin="10,14,0,0" TextWrapping="Wrap" Text="Search for game" VerticalAlignment="Top" Width="530" FontSize="24"/>
-		<Button Content="Search" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="554,14,0,0" VerticalAlignment="Top" Width="113" Foreground="White" FontSize="24" BorderThickness="0" Click="SerachButton"/>
+		<Button Content="Search" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="545,14,0,0" VerticalAlignment="Top" Width="113" Foreground="White" FontSize="24" BorderThickness="0" Click="SerachButton"/>
 		<Button Content="Add seleceted game" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1386,968,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="24" BorderThickness="0" Click="AddGameButton"/>
 	</Grid>
 </UserControl>

@@ -78,6 +78,7 @@
     <Compile Include="Control Layer\ComponentSizeController.cs" />
     <Compile Include="Control Layer\ComponentSSDController.cs" />
     <Compile Include="Control Layer\DBConnection.cs" />
+    <Compile Include="Control Layer\GameController.cs" />
     <Compile Include="Control Layer\SpecsController\ComponentHDDController.cs" />
     <Compile Include="Control Layer\SpecsController\MinSpecController.cs" />
     <Compile Include="Control Layer\SpecsController\RecSpecController.cs" />

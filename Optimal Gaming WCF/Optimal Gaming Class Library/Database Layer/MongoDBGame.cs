@@ -86,6 +86,16 @@ namespace Optimal_Gaming_Class_Library.Database_Layer
             await Collection.ReplaceOneAsync(filter, obj);
         }
 
+        /// <summary>
+        /// Returns all games from the collection
+        /// </summary>
+        /// <returns>List of all RootObject in the MongoDB</returns>
+        public List<RootObject> GetAllGames()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
+            
+
 
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Optimal_Gaming_Class_Library.Control_Layer;
+using Optimal_Gaming_Class_Library.Model_Layer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,11 +23,13 @@ namespace Content_Management_System
     public partial class AddGame : UserControl
     {
         Grid MainGrid = null;
+        GameController _GameController = null;
         
         public AddGame(Grid mainGrid)
         {
             InitializeComponent();
             MainGrid = mainGrid;
+            _GameController = new GameController();
         }
 
         private void AddGameButton(object sender, RoutedEventArgs e)
@@ -35,7 +39,19 @@ namespace Content_Management_System
 
         private void SerachButton(object sender, RoutedEventArgs e)
         {
+            //Serach for a game and display it in the list underneath
+            List<RootObject> list = _GameController.FindAllContaining(SearchField.Text);
 
+            //Clear the current content in the table
+            TableList.Items.Clear();
+
+            //Add content to table
+            foreach (var game in list)
+            {
+                TableList.Items.Add(game);
+            }
+
+            
         }
     }
 }
