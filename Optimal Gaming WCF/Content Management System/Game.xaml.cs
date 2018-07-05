@@ -20,9 +20,35 @@ namespace Content_Management_System
     /// </summary>
     public partial class Game : UserControl
     {
-        public Game()
+
+        Grid MainGrid = null;
+        
+        public Game(Grid mainGrid)
         {
             InitializeComponent();
+            MainGrid = mainGrid;
+        }
+
+        private void AddNewGame(object sender, RoutedEventArgs e)
+        {
+            //Not currently set to do anything
+            MainGrid.Children.Clear();
+            MainGrid.Children.Add(new AddGame(MainGrid));
+        }
+
+        private void ShowAllGames(object sender, RoutedEventArgs e)
+        {
+            // Not currently set to do anything
+        }
+
+        private void SearchForGame(object sender, RoutedEventArgs e)
+        {
+            // Not currently set to do anything
+        }
+
+        private void DeleteSelectedGame(object sender, RoutedEventArgs e)
+        {
+            // Not currently set to do anything
         }
     }
 }

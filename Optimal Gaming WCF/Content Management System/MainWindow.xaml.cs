@@ -20,22 +20,41 @@ namespace Content_Management_System
     /// </summary>
     public partial class MainWindow : Window
     {
+        Grid _MainGrid = null;
+        
+
         public MainWindow()
         {
             InitializeComponent();
+            _MainGrid = MainGrid;
             MainGrid.Children.Add(new Home());
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainGrid.Children.Clear();
-            MainGrid.Children.Add(new Game());
+            MainGrid.Children.Add(new Game(_MainGrid));
         }
 
         private void OverViewButton(object sender, RoutedEventArgs e)
         {
             MainGrid.Children.Clear();
             MainGrid.Children.Add(new Home());
+        }
+
+        private void SpecButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BuildButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void WebsiteButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
