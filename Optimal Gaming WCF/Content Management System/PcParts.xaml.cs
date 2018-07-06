@@ -20,9 +20,12 @@ namespace Content_Management_System
     /// </summary>
     public partial class PcParts : UserControl
     {
-        public PcParts()
+        Grid MainGrid = null;
+        
+        public PcParts(Grid mainGrid)
         {
             InitializeComponent();
+            MainGrid = mainGrid;
         }
 
         private void SearchForPart(object sender, RoutedEventArgs e)
@@ -47,7 +50,8 @@ namespace Content_Management_System
 
         private void AddNewPart(object sender, RoutedEventArgs e)
         {
-
+            MainGrid.Children.Clear();
+            MainGrid.Children.Add(new AddSpec());
         }
     }
 }

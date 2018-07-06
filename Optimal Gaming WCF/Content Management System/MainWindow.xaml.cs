@@ -45,7 +45,7 @@ namespace Content_Management_System
         private void SpecButton_Click(object sender, RoutedEventArgs e)
         {
             MainGrid.Children.Clear();
-            MainGrid.Children.Add(new PcParts());
+            MainGrid.Children.Add(new PcParts(_MainGrid));
         }
 
         private void BuildButton_Click(object sender, RoutedEventArgs e)

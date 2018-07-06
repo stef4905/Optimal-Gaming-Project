@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="984" d:DesignWidth="1664">
 	<Grid>
-		<Button Content="Add Spec" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1395,920,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="24" BorderThickness="0" Click="AddSpecButton"/>
+		<Button Content="Add Spec" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1370,920,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="24" BorderThickness="0" Click="AddSpecButton"/>
 		<Label Content="Name of the part" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top" FontSize="28"/>
 		<TextBox x:Name="NameText" HorizontalAlignment="Left" Height="39" Margin="52,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
 		<Label Content="Current Price of the part" HorizontalAlignment="Left" Margin="52,156,0,0" VerticalAlignment="Top" FontSize="28"/>
@@ -32,9 +32,9 @@
 		<Label Content="Max GPU length in mm" HorizontalAlignment="Left" Margin="636,638,0,0" VerticalAlignment="Top" FontSize="28"/>
 		<TextBox x:Name="MaxGPULengthText" HorizontalAlignment="Left" Height="40" Margin="636,690,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
 		<Label Content="Storage expantion (1x sata etc)" HorizontalAlignment="Left" Margin="1164,442,0,0" VerticalAlignment="Top" FontSize="28" Width="490"/>
-		<TextBox x:Name="StorageExpantionTExt" HorizontalAlignment="Left" Height="40" Margin="1164,494,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="490" FontSize="24"/>
+		<TextBox x:Name="StorageExpantionTExt" HorizontalAlignment="Left" Height="40" Margin="1164,494,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="465" FontSize="24"/>
 		<Label Content="Interface (outputs and inputs back)" HorizontalAlignment="Left" Margin="1164,540,0,0" VerticalAlignment="Top" FontSize="28" Width="490"/>
-		<TextBox x:Name="InterfaceText" HorizontalAlignment="Left" Height="40" Margin="1164,592,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="490" FontSize="24"/>
+		<TextBox x:Name="InterfaceText" HorizontalAlignment="Left" Height="40" Margin="1164,592,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="465" FontSize="24"/>
 
 	</Grid>
 </UserControl>
