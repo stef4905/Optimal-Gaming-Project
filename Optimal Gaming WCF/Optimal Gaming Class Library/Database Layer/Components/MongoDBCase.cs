@@ -86,5 +86,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<Case>.Filter.Eq(_case => _case.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns all Case object from the mongo database
+        /// </summary>
+        /// <returns>List of cases</returns>
+        public List<Case> GetAllCases()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

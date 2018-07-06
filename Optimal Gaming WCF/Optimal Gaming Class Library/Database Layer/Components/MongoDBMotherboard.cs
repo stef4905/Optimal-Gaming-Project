@@ -85,5 +85,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<Motherboard>.Filter.Eq(motherboard => motherboard.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns a list of all Motherboard's in the mongo database
+        /// </summary>
+        /// <returns>List of Motherboard's</returns>
+        public List<Motherboard> GetAllMotherboard()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

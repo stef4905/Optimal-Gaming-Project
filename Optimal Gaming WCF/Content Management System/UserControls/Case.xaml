@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Content_Management_System.UserControls.Case"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Content_Management_System.Specs"
+             mc:Ignorable="d" 
+             d:DesignHeight="984" d:DesignWidth="1664">
+	<Grid>
+		<Button Content="Add Spec" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1395,920,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="24" BorderThickness="0" Click="AddSpecButton"/>
+		<Label Content="Name of the part" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="NameText" HorizontalAlignment="Left" Height="39" Margin="52,105,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Current Price of the part" HorizontalAlignment="Left" Margin="52,156,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="PriceText" HorizontalAlignment="Left" Height="40" Margin="52,208,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Brandname of the manufactor" HorizontalAlignment="Left" Margin="52,262,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="BrandNameText" HorizontalAlignment="Left" Height="40" Margin="52,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Size and weight of the part in mm" HorizontalAlignment="Left" Margin="636,53,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="HeightText" HorizontalAlignment="Left" Height="39" Margin="636,105,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<TextBox x:Name="WidthText" HorizontalAlignment="Left" Height="39" Margin="806,105,0,0" TextWrapping="Wrap" Text="Width" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<TextBox x:Name="DepthText" HorizontalAlignment="Left" Height="39" Margin="976,105,0,0" TextWrapping="Wrap" Text="Depth" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<TextBox x:Name="WeightText" HorizontalAlignment="Left" Height="39" Margin="1142,105,0,0" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<Label Content="Part model" HorizontalAlignment="Left" Margin="52,442,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="ModelText" HorizontalAlignment="Left" Height="40" Margin="52,494,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Compatible motherboards (ATX, ITX etc.)" HorizontalAlignment="Left" Margin="52,540,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CompatibleMotherboardsText" HorizontalAlignment="Left" Height="40" Margin="52,592,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Materials" HorizontalAlignment="Left" Margin="52,638,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="MaterialText" HorizontalAlignment="Left" Height="40" Margin="52,690,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Cooling abilities (2x 140mm fan)" HorizontalAlignment="Left" Margin="636,442,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CollingText" HorizontalAlignment="Left" Height="40" Margin="636,494,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Max CPU cooler height in mm" HorizontalAlignment="Left" Margin="636,540,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="MaxCPUCoolerHeightText" HorizontalAlignment="Left" Height="40" Margin="636,592,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Max GPU length in mm" HorizontalAlignment="Left" Margin="636,638,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="MaxGPULengthText" HorizontalAlignment="Left" Height="40" Margin="636,690,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Storage expantion (1x sata etc)" HorizontalAlignment="Left" Margin="1164,442,0,0" VerticalAlignment="Top" FontSize="28" Width="490"/>
+		<TextBox x:Name="StorageExpantionTExt" HorizontalAlignment="Left" Height="40" Margin="1164,494,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="490" FontSize="24"/>
+		<Label Content="Interface (outputs and inputs back)" HorizontalAlignment="Left" Margin="1164,540,0,0" VerticalAlignment="Top" FontSize="28" Width="490"/>
+		<TextBox x:Name="InterfaceText" HorizontalAlignment="Left" Height="40" Margin="1164,592,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="490" FontSize="24"/>
+
+	</Grid>
+</UserControl>

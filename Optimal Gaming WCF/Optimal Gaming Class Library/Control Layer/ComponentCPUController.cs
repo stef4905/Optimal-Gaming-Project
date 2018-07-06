@@ -56,5 +56,13 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBCPU.Delete(obj);
         }
 
+        /// <summary>
+        /// Returns a list of all CPU's in the mongo database
+        /// </summary>
+        /// <returns>List of CPU's</returns>
+        public List<CPU> GetAllCPU()
+        {
+            return _MongoDBCPU.GetAllCPU();
+        }
     }
 }

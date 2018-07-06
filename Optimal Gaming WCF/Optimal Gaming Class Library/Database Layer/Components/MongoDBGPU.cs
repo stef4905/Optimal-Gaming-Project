@@ -80,5 +80,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<GPU>.Filter.Eq(gpu => gpu.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns a list of all GPU's in the mongo database
+        /// </summary>
+        /// <returns></returns>
+        public List<GPU> GetAllGPU()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

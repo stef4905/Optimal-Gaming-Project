@@ -84,5 +84,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<Ram>.Filter.Eq(_ram => _ram.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns a list of all Ram's in the mongo database
+        /// </summary>
+        /// <returns>List of Ram's</returns>
+        public List<Ram> GetAllRam()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

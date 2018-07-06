@@ -81,5 +81,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             await Collection.ReplaceOneAsync(filter, obj);
         }
 
+        /// <summary>
+        /// Returns a list of all HDD's in the mongo database
+        /// </summary>
+        /// <returns>List of HDD's</returns>
+        public List<HDD> GetAllHDD()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
+
     }
 }

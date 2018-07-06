@@ -59,7 +59,14 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBCase.Delete(obj);
         }
 
-
+        /// <summary>
+        /// Returns a list of all Cases in the database
+        /// </summary>
+        /// <returns>List of all cases</returns>
+        public List<Case> GetAllCase()
+        {
+            return _MongoDBCase.GetAllCases();
+        }
 
 
     }

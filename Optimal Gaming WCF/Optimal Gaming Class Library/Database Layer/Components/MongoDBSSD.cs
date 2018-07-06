@@ -85,5 +85,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<SSD>.Filter.Eq(ssd => ssd.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns a list of all SSD's in the mongo database
+        /// </summary>
+        /// <returns>List of SSD's</returns>
+        public List<SSD> GetAllSSD()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

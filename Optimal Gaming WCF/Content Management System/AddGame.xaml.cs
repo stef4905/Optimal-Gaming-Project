@@ -32,9 +32,15 @@ namespace Content_Management_System
             _GameController = new GameController();
         }
 
+        /// <summary>
+        /// Adding the slected item (game) to the Mongo database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddGameButton(object sender, RoutedEventArgs e)
         {
-
+            RootObject game = TableList.SelectedItem as RootObject;
+            _GameController.CreateGame(game);
         }
 
         private void SerachButton(object sender, RoutedEventArgs e)

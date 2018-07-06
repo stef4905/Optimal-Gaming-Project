@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Content_Management_System.AddSpec"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Content_Management_System"
+             mc:Ignorable="d" 
+            d:DesignHeight="1051" d:DesignWidth="1664">
+	<Grid>
+		<Button Content="Open template" HorizontalAlignment="Left" Height="38" Background="#0984e3" Margin="545,14,0,0" VerticalAlignment="Top" Width="197" Foreground="White" FontSize="24" BorderThickness="0" Click="OpenTemplateButton"/>
+		<ComboBox x:Name="Combo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="512" Height="42" FontSize="26">
+			<ComboBoxItem IsSelected="true">Case</ComboBoxItem>
+			<ComboBoxItem>CPU</ComboBoxItem>
+			<ComboBoxItem>GPU</ComboBoxItem>
+			<ComboBoxItem>HDD</ComboBoxItem>
+			<ComboBoxItem>SSD</ComboBoxItem>
+			<ComboBoxItem>Ram</ComboBoxItem>
+			<ComboBoxItem>Motherboard</ComboBoxItem>
+			<ComboBoxItem>PSU</ComboBoxItem>
+		</ComboBox>
+		<Grid x:Name="SpecGrid" HorizontalAlignment="Left" Height="984" Margin="10,57,0,0" VerticalAlignment="Top" Width="1644"/>
+	</Grid>
+</UserControl>

@@ -80,5 +80,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<CPU>.Filter.Eq(cpu => cpu.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns a list of all CPU's in the mongo database
+        /// </summary>
+        /// <returns>List of cpu's</returns>
+        public List<CPU> GetAllCPU()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

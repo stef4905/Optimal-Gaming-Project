@@ -69,6 +69,5 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             await _MongoDBSize.UpdateAsync(obj);
         }
 
-
     }
 }

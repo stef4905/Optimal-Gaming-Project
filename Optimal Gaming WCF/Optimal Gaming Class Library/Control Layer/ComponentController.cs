@@ -11,15 +11,15 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
 {
     public class ComponentController
     {
-        private ComponentCaseController _ComponentCaseController = null;
-        private ComponentGPUController _ComponentGPUController = null;
-        private ComponentCPUController _ComponentCPUController = null;
-        private ComponentMotherboardController _ComponentMotherboardController = null;
-        private ComponentPSUController _ComponentPSUController = null;
-        private ComponentSizeController _ComponentSizeController = null;
-        private ComponentSSDController _ComponentSSDController = null;
-        private ComponentHDDController _ComponentHDDController = null;
-        private ComponentRamController _ComponentRamController = null;
+        public ComponentCaseController _ComponentCaseController = null;
+        public ComponentGPUController _ComponentGPUController = null;
+        public ComponentCPUController _ComponentCPUController = null;
+        public ComponentMotherboardController _ComponentMotherboardController = null;
+        public ComponentPSUController _ComponentPSUController = null;
+        public ComponentSizeController _ComponentSizeController = null;
+        public ComponentSSDController _ComponentSSDController = null;
+        public ComponentHDDController _ComponentHDDController = null;
+        public ComponentRamController _ComponentRamController = null;
         //Ram controller needed
         
         /// <summary>

@@ -60,5 +60,14 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBRam.Delete(obj);
         }
 
+        /// <summary>
+        /// Returns a list of all Ram in the mongo database
+        /// </summary>
+        /// <returns>List of Ram</returns>
+        public List<Ram> GetAllRam()
+        {
+            return _MongoDBRam.GetAllRam();
+        }
+
     }
 }

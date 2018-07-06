@@ -57,5 +57,15 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBGPU.Delete(obj);
         }
 
+        /// <summary>
+        /// Returns a list of all GPU's in the mongo database
+        /// </summary>
+        /// <returns>List of CPU's</returns>
+        public List<GPU> GetAllGPU()
+        {
+            return _MongoDBGPU.GetAllGPU();
+        }
+
+
     }
 }

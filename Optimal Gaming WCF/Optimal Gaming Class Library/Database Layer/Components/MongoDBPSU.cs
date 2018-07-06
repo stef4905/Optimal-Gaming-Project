@@ -85,5 +85,14 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
             var filter = Builders<PSU>.Filter.Eq(psu => psu.MongoDBId, obj.MongoDBId);
             await Collection.ReplaceOneAsync(filter, obj);
         }
+
+        /// <summary>
+        /// Returns a list of all PSU's in the mongo database
+        /// </summary>
+        /// <returns>List of PSU's</returns>
+        public List<PSU> GetAllPSU()
+        {
+            return Collection.Find(new BsonDocument()).ToList();
+        }
     }
 }

@@ -50,6 +50,14 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
         {
             return _MongoDBSSD.Delete(obj);
         }
-        
+
+        /// <summary>
+        /// Returns a list of all SSD's in the mongo database
+        /// </summary>
+        /// <returns>List of SSD's</returns>
+        public List<SSD> GetAllSSD()
+        {
+            return _MongoDBSSD.GetAllSSD();
+        }
     }
 }

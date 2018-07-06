@@ -31,10 +31,10 @@ namespace Content_Management_System
             InitializeComponent();
             MainGrid = mainGrid;
             _GameController = new GameController();
-            GetAllGames();
+            GetAllGamesAndrefresh();
         }
 
-        public void GetAllGames()
+        public void GetAllGamesAndrefresh()
         {
             List<RootObject> games = _GameController.GetAllGames();
             TableList.Items.Clear();
@@ -53,7 +53,12 @@ namespace Content_Management_System
 
         private void ShowAllGames(object sender, RoutedEventArgs e)
         {
-            // Not currently set to do anything
+            List<RootObject> games = _GameController.GetAllGames();
+            TableList.Items.Clear();
+            foreach (var game in games)
+            {
+                TableList.Items.Add(game);
+            }
         }
 
         private void SearchForGame(object sender, RoutedEventArgs e)
@@ -63,7 +68,10 @@ namespace Content_Management_System
 
         private void DeleteSelectedGame(object sender, RoutedEventArgs e)
         {
-            // Not currently set to do anything
+            RootObject game = TableList.SelectedItem as RootObject;
+            _GameController.DeleteGame(game);
+            GetAllGamesAndrefresh();
+
         }
     }
 }

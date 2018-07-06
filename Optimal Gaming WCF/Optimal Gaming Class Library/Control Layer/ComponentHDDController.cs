@@ -59,6 +59,13 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBHDD.Delete(obj);
         }
 
-
+        /// <summary>
+        /// Returns a list of all HDD's in the Mongo database
+        /// </summary>
+        /// <returns>List of HDD's</returns>
+        public List<HDD> GetAllHDD()
+        {
+            return _MongoDBHDD.GetAllHDD();
+        }
     }
 }

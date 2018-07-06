@@ -60,6 +60,15 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBPSU.Delete(obj);
         }
 
+        /// <summary>
+        /// Returns a list of all PSU's in the mongo database
+        /// </summary>
+        /// <returns>List of PSU's</returns>
+        public List<PSU> GetAllPSU()
+        {
+            return _MongoDBPSU.GetAllPSU();
+        }
         
+
     }
 }

@@ -51,6 +51,14 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
             return _MongoDBMotherboard.Delete(obj);
         }
 
+        /// <summary>
+        /// Returns a list of all motherboards in the mongo database
+        /// </summary>
+        /// <returns>List of Motherboards</returns>
+        public List<Motherboard> GetAllMotherboard()
+        {
+            return _MongoDBMotherboard.GetAllMotherboard();
+        }
 
     }
 }
