@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Content_Management_System.UserControls.RamComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Content_Management_System.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="984" d:DesignWidth="1664">
+	<Grid>
+		<Button Content="Add Spec" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1370,920,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="24" BorderThickness="0" Click="AddSpecButton"/>
+		<Label Content="Name of the part" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="NameText" HorizontalAlignment="Left" Height="39" Margin="52,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Current Price of the part" HorizontalAlignment="Left" Margin="52,156,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="PriceText" HorizontalAlignment="Left" Height="40" Margin="52,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Brandname of the manufactor" HorizontalAlignment="Left" Margin="52,262,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="BrandNameText" HorizontalAlignment="Left" Height="40" Margin="52,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Size and weight of the part in mm" HorizontalAlignment="Left" Margin="636,53,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="HeightText" HorizontalAlignment="Left" Height="39" Margin="636,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<TextBox x:Name="WidthText" HorizontalAlignment="Left" Height="39" Margin="806,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<TextBox x:Name="DepthText" HorizontalAlignment="Left" Height="39" Margin="976,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<TextBox x:Name="WeightText" HorizontalAlignment="Left" Height="39" Margin="1142,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" FontSize="24"/>
+		<Label Content="Capacity in GB" HorizontalAlignment="Left" Margin="52,409,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CapacityText" HorizontalAlignment="Left" Height="39" Margin="52,461,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" FontSize="24"/>
+		<Label Content="Amount of sticks" HorizontalAlignment="Left" Margin="320,409,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="RamSticksText" HorizontalAlignment="Left" Height="39" Margin="320,461,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" FontSize="24"/>
+		<Label Content="Technology" HorizontalAlignment="Left" Margin="52,503,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="TechnologyText" HorizontalAlignment="Left" Height="39" Margin="52,555,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" FontSize="24"/>
+		<Label Content="Frequency MHz" HorizontalAlignment="Left" Margin="52,597,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="FrequencySpeedText" HorizontalAlignment="Left" Height="39" Margin="52,649,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" FontSize="24"/>
+		<Label Content="Model (DIMM 288-pin)" HorizontalAlignment="Left" Margin="320,505,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="ModelText" HorizontalAlignment="Left" Height="39" Margin="320,557,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" FontSize="24"/>
+
+
+	</Grid>
+</UserControl>

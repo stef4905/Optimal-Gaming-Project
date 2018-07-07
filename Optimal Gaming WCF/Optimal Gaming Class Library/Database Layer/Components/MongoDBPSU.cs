@@ -12,7 +12,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
    public class MongoDBPSU : IMongoDBCRUD<PSU>
     {
         private IMongoDatabase Database;
-        private string DatabaseName = "Components - PSU";
+        private string DatabaseName = "Components-PSU";
         private IMongoCollection<PSU> Collection;
 
         /// <summary>

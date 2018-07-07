@@ -23,6 +23,15 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
         }
 
         /// <summary>
+        /// Adds the givene Motherboard object to the mongo database
+        /// </summary>
+        /// <param name="obj">Motherboard object</param>
+        public void AddToDatabase(Motherboard obj)
+        {
+            _MongoDBMotherboard.Create(obj);
+        }
+
+        /// <summary>
         /// Returns a single Motherboard object if it exists in the database
         /// </summary>
         /// <param name="id">ObjectId for the motherboard document in the database</param>

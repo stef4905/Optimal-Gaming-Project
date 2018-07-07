@@ -12,7 +12,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
     public class MongoDBMotherboard : IMongoDBCRUD<Motherboard>
     {
         private IMongoDatabase Database;
-        private string DatabaseName = "Components - Motherboard";
+        private string DatabaseName = "Components-Motherboard";
         private IMongoCollection<Motherboard> Collection;
 
         /// <summary>

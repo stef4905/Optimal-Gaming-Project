@@ -72,6 +72,15 @@
     <Compile Include="UserControls\HDDcomponent.xaml.cs">
       <DependentUpon>HDDcomponent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\MotherboardComponent.xaml.cs">
+      <DependentUpon>MotherboardComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PSUComponent.xaml.cs">
+      <DependentUpon>PSUComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RamComponent.xaml.cs">
+      <DependentUpon>RamComponent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\SSDComponent.xaml.cs">
       <DependentUpon>SSDComponent.xaml</DependentUpon>
     </Compile>
@@ -129,6 +138,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\HDDcomponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\MotherboardComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\PSUComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\RamComponent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

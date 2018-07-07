@@ -21,7 +21,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components
 
         public Size _Size { get; set; } // Size and weight of the psu
         public string FormFactor { get; set; } // ATX or other size
-        public string PowerOutlets { get; set; } // Connector pins for pc compoents
+        public string[] PowerOutlets { get; set; } // Connector pins for pc compoents
         public int Watt { get; set; } // Power in watts
         public bool Modular { get; set; } // Is the PSU modualar or fixed ? 
 
@@ -36,7 +36,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components
         /// <param name="powerOutlets">Outlet pins for connecting the psu to the pc components</param>
         /// <param name="watt">Power of the PSU in wats</param>
         /// <param name="modular">Is the psu modular true = yes | false = no</param>
-        public PSU(string name, double price, string brandName, Size Size, string formFactor, string powerOutlets, int watt, bool modular)
+        public PSU(string name, double price, string brandName, Size Size, string formFactor, string[] powerOutlets, int watt, bool modular)
         {
             Name = name;
             Price = price;

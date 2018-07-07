@@ -1,4 +1,5 @@
 ﻿using Optimal_Gaming_Class_Library.Control_Layer;
+using Optimal_Gaming_Class_Library.Model_Layer;
 using Optimal_Gaming_Class_Library.Model_Layer.Components;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,9 @@ namespace Content_Management_System
             List<GPU> gpu = _ComponentController._ComponentGPUController.GetAllGPU();
             List<HDD> hdd = _ComponentController._ComponentHDDController.GetAllHDD();
             List<SSD> ssd = _ComponentController._ComponentSSDController.GetAllSSD();
-
+            List<Ram> ram = _ComponentController._ComponentRamController.GetAllRam();
+            List<Motherboard> motherboard = _ComponentController._ComponentMotherboardController.GetAllMotherboard();
+            List<PSU> psu = _ComponentController._ComponentPSUController.GetAllPSU();
 
             //Foreach over each pc part list and insert them into the table
             foreach (var _case in Case)
@@ -69,6 +72,18 @@ namespace Content_Management_System
             {
                 TableList.Items.Add(_ssd);
             }
+            foreach (var _ram in ram)
+            {
+                TableList.Items.Add(_ram);
+            }
+            foreach (var _motherboard in motherboard)
+            {
+                TableList.Items.Add(_motherboard);
+            }
+            foreach (var _psu in psu)
+            {
+                TableList.Items.Add(_psu);
+            }
         }
 
         private void SearchForPart(object sender, RoutedEventArgs e)
@@ -78,7 +93,7 @@ namespace Content_Management_System
 
         private void ShowAllParts(object sender, RoutedEventArgs e)
         {
-
+            GetAllSpecsAndRefresh();
         }
 
         private void DeleteSelectedPart(object sender, RoutedEventArgs e)
@@ -107,6 +122,19 @@ namespace Content_Management_System
             {
                 _ComponentController._ComponentSSDController.DeleteFromDatabase(selectedItem as SSD);
             }
+            if (selectedItem.GetType() == typeof(Ram))
+            {
+                _ComponentController._ComponentRamController.DeleteFromDatabase(selectedItem as Ram);
+            }
+            if (selectedItem.GetType() == typeof(Motherboard))
+            {
+                _ComponentController._ComponentMotherboardController.DeleteFromDatabase(selectedItem as Motherboard);
+            }
+            if (selectedItem.GetType() == typeof(PSU))
+            {
+                _ComponentController._ComponentPSUController.DeleteFromDatabase(selectedItem as PSU);
+            }
+
 
             //Refresh the list of all the pc parts
             GetAllSpecsAndRefresh();

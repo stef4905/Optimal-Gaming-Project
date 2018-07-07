@@ -53,15 +53,15 @@ namespace Content_Management_System
             }
             else if (Combo.SelectedIndex == 5)
             {
-
+                SpecGrid.Children.Add(new RamComponent());
             }
             else if (Combo.SelectedIndex == 6)
             {
-
+                SpecGrid.Children.Add(new MotherboardComponent());
             }
             else if (Combo.SelectedIndex == 7)
             {
-
+                SpecGrid.Children.Add(new PSUComponent());
             }
             else
             {

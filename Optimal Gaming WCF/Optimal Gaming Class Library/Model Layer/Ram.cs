@@ -23,7 +23,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer
         public int RamSticks { get; set; } // Amount of ram sticks in the package
         public string Technology { get; set; } // DDR4 / DDR3
         public string Model { get; set; } // DIMM 288-pin
-        public string FrequencySpeed { get; set; } // 2666MHz (PC4-21300)
+        public int FrequencySpeed { get; set; } // 2666MHz (PC4-21300)
 
         /// <summary>
         /// Constructor for creating a new ram object
@@ -37,7 +37,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer
         /// <param name="technology">Technolgy of the ram</param>
         /// <param name="model">Model type</param>
         /// <param name="frequencySpeed">Frequency of the speed in MHz and PC4-info</param>
-        public Ram(string name, double price, string brandName, Size Size, int capacity, int ramSticks, string technology, string model, string frequencySpeed)
+        public Ram(string name, double price, string brandName, Size Size, int capacity, int ramSticks, string technology, string model, int frequencySpeed)
         {
             Name = name;
             Price = price;
