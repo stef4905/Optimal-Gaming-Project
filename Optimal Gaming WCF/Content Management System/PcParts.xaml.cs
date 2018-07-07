@@ -42,11 +42,32 @@ namespace Content_Management_System
 
             //Get all pc parts through their individual controller
             List<Case> Case = _ComponentController._ComponentCaseController.GetAllCase();
+            List<CPU> cpu = _ComponentController._ComponentCPUController.GetAllCPU();
+            List<GPU> gpu = _ComponentController._ComponentGPUController.GetAllGPU();
+            List<HDD> hdd = _ComponentController._ComponentHDDController.GetAllHDD();
+            List<SSD> ssd = _ComponentController._ComponentSSDController.GetAllSSD();
+
 
             //Foreach over each pc part list and insert them into the table
             foreach (var _case in Case)
             {
                 TableList.Items.Add(_case);
+            }
+            foreach (var _cpu in cpu)
+            {
+                TableList.Items.Add(_cpu);
+            }
+            foreach (var _gpu in gpu)
+            {
+                TableList.Items.Add(_gpu);
+            }
+            foreach (var _hdd in hdd)
+            {
+                TableList.Items.Add(_hdd);
+            }
+            foreach (var _ssd in ssd)
+            {
+                TableList.Items.Add(_ssd);
             }
         }
 
@@ -69,6 +90,22 @@ namespace Content_Management_System
             if (selectedItem.GetType() == typeof(Case))
             {
                 _ComponentController._ComponentCaseController.DeleteFromDatabase(selectedItem as Case);
+            }
+            if (selectedItem.GetType() == typeof(CPU))
+            {
+                _ComponentController._ComponentCPUController.DeleteFromDatabase(selectedItem as CPU);
+            }
+            if (selectedItem.GetType() == typeof(GPU))
+            {
+                _ComponentController._ComponentGPUController.DeleteFromDatabase(selectedItem as GPU);
+            }
+            if (selectedItem.GetType() == typeof(HDD))
+            {
+                _ComponentController._ComponentHDDController.DeleteFromDatabase(selectedItem as HDD);
+            }
+            if (selectedItem.GetType() == typeof(SSD))
+            {
+                _ComponentController._ComponentSSDController.DeleteFromDatabase(selectedItem as SSD);
             }
 
             //Refresh the list of all the pc parts

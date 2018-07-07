@@ -12,7 +12,7 @@ namespace Optimal_Gaming_Class_Library.Database_Layer.Components
     public class MongoDBSSD : IMongoDBCRUD<SSD>
     {
         private IMongoDatabase Database;
-        private string DatabaseName = "Components - SSD";
+        private string DatabaseName = "Components-SSD";
         private IMongoCollection<SSD> Collection;
 
         /// <summary>

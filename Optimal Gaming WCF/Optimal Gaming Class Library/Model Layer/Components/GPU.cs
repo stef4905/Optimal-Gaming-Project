@@ -25,9 +25,9 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components
         public bool VRReady { get; set; } // Bool for is the GPU ready for virtual reality
         public string[] Interface { get; set; } // Outputs for display and monitor
         public string[] APICompability { get; set; } // DirectX 12, OpenGL etc
-        public string Features { get; set; } // SLI, Afterburner etc
+        public string[] Features { get; set; } // SLI, Afterburner etc
         public double VRamSize { get; set; } // Size of the onboard VRam - in GB
-        public double VRamTechnology { get; set; } // GDDR5 SDRAM
+        public string VRamTechnology { get; set; } // GDDR5 SDRAM
         public double VRamClockSpeed { get; set; } // Speed of the onboard VRam - in MHz
         public string VRamBus { get; set; } // 256-bit
         public string[] SystemRequirements { get; set; } // PSU size, pin connector
@@ -53,7 +53,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components
         /// <param name="vRamBus">VRam bus</param>
         /// <param name="systemRequirements">System requirements</param>
         /// <param name="powerConsumption">Total power consumption</param>
-        public GPU(string name, double price, string brandName, Size Size, string busType, double kernelClock, double boostClock, bool vRReady, string[] _interface, string[] _APICompability, string features, double vRamSize, double vRamTechnology, double vRamClockSpeed, string vRamBus, string[] systemRequirements, int powerConsumption)
+        public GPU(string name, double price, string brandName, Size Size, string busType, double kernelClock, double boostClock, bool vRReady, string[] _interface, string[] _APICompability, string[] features, double vRamSize, string vRamTechnology, double vRamClockSpeed, string vRamBus, string[] systemRequirements, int powerConsumption)
         {
             Name = name;
             Price = price;

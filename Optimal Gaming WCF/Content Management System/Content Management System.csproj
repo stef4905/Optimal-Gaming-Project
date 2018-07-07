@@ -63,6 +63,18 @@
     <Compile Include="UserControls\CaseComponent.xaml.cs">
       <DependentUpon>CaseComponent.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\CPUComponent.xaml.cs">
+      <DependentUpon>CPUComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GPUComponent.xaml.cs">
+      <DependentUpon>GPUComponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HDDcomponent.xaml.cs">
+      <DependentUpon>HDDcomponent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SSDComponent.xaml.cs">
+      <DependentUpon>SSDComponent.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddGame.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +117,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\CaseComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\CPUComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\GPUComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HDDcomponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\SSDComponent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

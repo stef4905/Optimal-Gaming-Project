@@ -37,19 +37,19 @@ namespace Content_Management_System
             }
             else if (Combo.SelectedIndex == 1)
             {
-                
+                SpecGrid.Children.Add(new CPUComponent());
             }
             else if (Combo.SelectedIndex == 2)
             {
-
+                SpecGrid.Children.Add(new GPUComponent());
             }
             else if (Combo.SelectedIndex == 3)
             {
-
+                SpecGrid.Children.Add(new HDDcomponent());
             }
             else if (Combo.SelectedIndex == 4)
             {
-
+                SpecGrid.Children.Add(new SSDComponent());
             }
             else if (Combo.SelectedIndex == 5)
             {

@@ -23,6 +23,15 @@ namespace Optimal_Gaming_Class_Library.Control_Layer
         }
 
         /// <summary>
+        /// Adds the given SSD object to the mongo database
+        /// </summary>
+        /// <param name="obj">SSD object</param>
+        public void AddToDatabase(SSD obj)
+        {
+            _MongoDBSSD.Create(obj);
+        }
+
+        /// <summary>
         /// Returns a single SSD object by the given ObjectId
         /// </summary>
         /// <param name="id">ObjectId of the SSD document</param>

@@ -21,9 +21,9 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components
         public Size _Size { get; set; } // Size and weight
         public int StorageSize { get; set; } // Size of storage capacity - in GB
         public string ModelSize { get; set; } // 3.5"
-        public string Interace { get; set; } // SATA 6GB/S
+        public string[] Interace { get; set; } // SATA 6GB/S
         public int BufferSize { get; set; } // Size of the buffer ex. 256 - in MB
-        public string Features { get; set; } // Features of the hdd
+        public string[] Features { get; set; } // Features of the hdd
         public int TransactionSpeed { get; set; } // speed of the transaction in MBps
         public double AvrWaitingTime { get; set; } // Averege waiting time in ms
         public int RotationSpeed { get; set; } // Rotation speed - in rpm
@@ -47,7 +47,7 @@ namespace Optimal_Gaming_Class_Library.Model_Layer.Components
         /// <param name="rotationSpeed">Rotation speed</param>
         /// <param name="expectedLifeTime">Expected life time - in hours</param>
         /// <param name="powerConsumptionUnderLoad">Power consumption under load - in Watt</param>
-        public HDD(string name, double price, string brandName, Size Size, int storageSize, string modelSize, string interace, int bufferSize, string features, int transactionSpeed, double avrWaitingTime, int rotationSpeed, int expectedLifeTime, double powerConsumptionUnderLoad)
+        public HDD(string name, double price, string brandName, Size Size, int storageSize, string modelSize, string[] interace, int bufferSize, string[] features, int transactionSpeed, double avrWaitingTime, int rotationSpeed, int expectedLifeTime, double powerConsumptionUnderLoad)
         {
             Name = name;
             Price = price;

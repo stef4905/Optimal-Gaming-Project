@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Optimal_Gaming_Class_Library.Control_Layer;
 using Optimal_Gaming_Class_Library.Model_Layer.Components.Details;
 using Optimal_Gaming_Class_Library.Control_Layer.SpecsController;
+using Optimal_Gaming_Class_Library.Model_Layer.Components;
 
 namespace Console_App_for_testing_only
 {
@@ -25,14 +26,11 @@ namespace Console_App_for_testing_only
 
         public static void CreateNewGame()
         {
-            //Creating a new IGDB api connection
-            IGDB igdb = new IGDB();
+            ComponentController cc = new ComponentController();
+            Size size = new Size(1,1,1,1);
+            SSD ssd = new SSD("name", 10.0, "brand", size, 1, "2.3", new string[] { "1" }, 1, new string[] { "1" }, 1, 1, 1, 1.2);
 
-            List<RootObject> list = igdb.FindGame("Halo");
-            foreach (var game in list)
-            {
-                Console.WriteLine(game.name);
-            }
+            cc._ComponentSSDController.AddToDatabase(ssd);
         }
 
 

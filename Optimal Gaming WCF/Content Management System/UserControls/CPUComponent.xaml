@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Content_Management_System.UserControls.CPUComponent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Content_Management_System.UserControls"
+             mc:Ignorable="d" 
+              d:DesignHeight="984" d:DesignWidth="1664">
+	<Grid>
+		<Button Content="Add Spec" HorizontalAlignment="Left" Height="54" Background="#0984e3" Margin="1370,920,0,0" VerticalAlignment="Top" Width="259" Foreground="White" FontSize="24" BorderThickness="0" Click="AddSpecButton"/>
+		<Label Content="Name of the part" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="NameText" HorizontalAlignment="Left" Height="39" Margin="52,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Current Price of the part" HorizontalAlignment="Left" Margin="52,156,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="PriceText" HorizontalAlignment="Left" Height="40" Margin="52,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Brandname of the manufactor" HorizontalAlignment="Left" Margin="52,262,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="BrandNameText" HorizontalAlignment="Left" Height="40" Margin="52,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Nr. of cores" HorizontalAlignment="Left" Margin="636,47,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CoresText" HorizontalAlignment="Left" Height="40" Margin="636,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" FontSize="24"/>
+		<Label Content="Nr. of threads" HorizontalAlignment="Left" Margin="918,47,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="ThreadsText" HorizontalAlignment="Left" Height="40" Margin="918,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" FontSize="24"/>
+		<Label Content="Cache in MB" HorizontalAlignment="Left" Margin="636,156,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CacheText" HorizontalAlignment="Left" Height="40" Margin="636,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" FontSize="24"/>
+		<Label Content="Clock frequence" HorizontalAlignment="Left" Margin="636,262,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="ClockFrequenceText" HorizontalAlignment="Left" Height="40" Margin="636,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" FontSize="24"/>
+		<Label Content="Turbo frequence" HorizontalAlignment="Left" Margin="918,262,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="TurboFrequenceText" HorizontalAlignment="Left" Height="40" Margin="918,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" FontSize="24"/>
+		<Label Content="Compatible sockets" HorizontalAlignment="Left" Margin="636,428,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CompatibleSocketsText" HorizontalAlignment="Left" Height="158" Margin="636,480,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="308" FontSize="24"/>
+		<Label Content="Compatible chipsets" HorizontalAlignment="Left" Margin="972,428,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="CompatibleChipsetsText" HorizontalAlignment="Left" Height="158" Margin="972,480,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="308" FontSize="24"/>
+		<Label Content="Production process in nm" HorizontalAlignment="Left" Margin="636,656,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="ProductionProcessText" HorizontalAlignment="Left" Height="40" Margin="636,708,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="308" FontSize="24"/>
+		<Label Content="Design details" HorizontalAlignment="Left" Margin="52,428,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="DesignDetailsText" HorizontalAlignment="Left" Height="158" Margin="52,480,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Functionalities" HorizontalAlignment="Left" Margin="52,656,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="FunctionalititesText" HorizontalAlignment="Left" Height="158" Margin="52,708,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500" FontSize="24"/>
+		<Label Content="Integrated GPU" HorizontalAlignment="Left" Margin="972,656,0,0" VerticalAlignment="Top" FontSize="28"/>
+		<TextBox x:Name="IntegrateddGraphicsText" HorizontalAlignment="Left" Height="40" Margin="972,708,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="308" FontSize="24"/>
+
+
+	</Grid>
+</UserControl>
